@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <title>Taraandi</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+</head>
+
+<body>
+    <header class="relative z-50">
+        <nav class="py-4 md:py-5 bg-[#222831]">
+            <div class="mx-6 md:mx-28 md:flex md:items-center md:justify-between">
+
+                <div class="flex justify-between items-center">
+                    <div class="mx-2 flex cursor-pointer">
+                        <span class="text-2xl text-[#FFD369] font-Sans font-bold">Andi</span>
+                        <span class="text-xl text-[#FFFFFF] font-Sans font-bold pt-1">suantara</span>
+                    </div>
+
+                    <span class="text-3xl text-[#FFFFFF] cursor-pointer mx-2 md:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+
+                <ul
+                    class="md:flex md:items-center z-[-1] md:-mt-1 -mt-3 md:z-auto md:static absolute md:bg-[#222831] bg-[#1D242E] bg-opacity-85 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <li
+                        class="mx-1 md:mx-6 md:px-4 my-6 md:my-0 border-none md:border-solid md:hover:border-b-2 md:border-[#FFD369]">
+                        <a href="#" class="text-base text-[#FFFFFF] hover:text-[#FFD369] duration-500">Home</a>
+                    </li>
+                    <li
+                        class="mx-1 md:mx-6 md:px-4 my-6 md:my-0 border-none md:border-solid md:hover:border-b-2 md:border-[#FFD369]">
+                        <a href="#about" class="text-base text-[#FFFFFF] hover:text-[#FFD369] duration-500">About</a>
+                    </li>
+                    <li
+                        class="mx-1 md:ml-6 md:px-4 my-6 md:my-0 border-none md:border-solid md:hover:border-b-2 md:border-[#FFD369]">
+                        <a href="#contact"
+                            class="text-base text-[#FFFFFF] hover:text-[#FFD369] duration-500">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <div id="about" class="bg-cover bg-center w-full h-full"
+            style="background-image: url('images/bgSatu-edit.jpg');">
+            <div class="relative z-20 mx-6 md:mx-20">
+                <div class="flex md:justify-center items-center md:flex-row flex-col pt-10 md:pt-20 md:gap-14 gap-5">
+                    <div class="w-48 md:w-80">
+                        <img src="images/profile.png" alt="profile">
+                    </div>
+                    <div class="flex flex-col w-auto ">
+                        <div class="my-1 md:my-2">
+                            <span class="-ml-1 text-5xl md:text-7xl font-bold text-[#FFD369]">Hi!</span>
+                        </div>
+                        <div class="my-1 md:my-2">
+                            <p class="text-white text-xl md:text-2xl font-sans">My name is</p>
+                            <div class="border-b-2 w-48 md:w-60 border-[#FFD369]">
+                                <p class="text-white text-xl md:text-2xl font-sans ">I Ketut Andi Suantara</p>
+                            </div>
+                        </div>
+                        <div class="my-1 md:my-2 max-w-md">
+                            <span class="text-white font-sans text-sm md:text-base line-clamp-auto">
+                                saya adalah mahasiswa dari universitas pendidikan ganesha (undiksha) jurusan teknik
+                                informatika, prodi ilmu komputer,
+                                terima kasih sudah berkunjung di web ini, salam kenal salam rahayu, jangan lupa follow
+                                <em> sosmed'ku:) </em>
+                            </span>
+                        </div>
+                        <div class="my-1 md:my-2 flex flex-row">
+                            <a href="https://www.tiktok.com/@taraandi_16" target="_blank"
+                                class="text-white hover:text-[#FFD369] mr-5 py-2 text-2xl md:text-3xl">
+                                <ion-icon name="logo-tiktok"></ion-icon>
+                            </a>
+                            <a href="https://www.instagram.com/taraandi_" target="_blank"
+                                class="text-white hover:text-[#FFD369] mr-5 py-2 text-2xl md:text-3xl">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="https://youtu.be/MVU2nATwT94?si=idgCBqTuVkD5vzA_" target="_blank"
+                                class="text-white hover:text-[#FFD369] mr-5 py-2 text-2xl md:text-3xl">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10 md:pt-14">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#CBCBCB" fill-opacity="1"
+                        d="M0,128L60,160C120,192,240,256,360,245.3C480,235,600,149,720,144C840,139,960,213,1080,240C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    
+        <div class="-mt-2 w-full md:h-1/5 bg-[#CBCBCB]">
+            <div class="mx-6 md:mx-20">
+                <div class="flex justify-center md:-mt-2">
+                    <div class="max-w-96 flex flex-col items-center">
+                        <span class="text-black text-lg md:text-3xl font-bold pb-2">my achievements</span>
+                        <p class="text-black text-sm md:text-lg line-clamp-auto text-center">Lorem ipsum dolor sit amet,
+                            consectetur<br>adipiscing elit, sed do</p>
+                    </div>
+                </div>
+    
+                <div class="flex md:flex-row flex-col gap-6 mt-12 md:mt-16 items-center md:justify-center">
+                    <!-- {{-- card1 --}} -->
+                    <div class="max-w-60 md:max-w-xs border rounded-lg shadow-lg bg-gray-800 border-gray-700">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="cursor-pointer transform transition-transform duration-200 hover:scale-110"
+                                src="images/css.jpg" alt="image" onclick="openModal()" />
+                        </div>
+                        <div class="p-5">
+                            <div class="cursor-pointer" onclick="openModal()">
+                                <h5 class="mb-2 text-lg md:text-xl font-bold text-white">css
+                                    programming</h5>
+                            </div>
+                            <p class="mb-3 text-sm md:text-base font-normal text-gray-400">sertifikat
+                                css dari sololearn</p>
+                        </div>
+                        <!-- {{-- modal image card --}} -->
+                        <div id="myModal"
+                            class="modal hidden fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex justify-center items-center">
+                            <div class="modal-content">
+                                <div class="relative p-3 w-full max-w-xl md:max-w-4xl max-h-full">
+                                    <img src="images/css.jpg" alt="image">
+                                    <div class="absolute top-4 md:top-5 right-4 md:right-5">
+                                        <span
+                                            class="flex justify-content p-2 md:p-3 bg-gray-500 text-white rounded-full hover:bg-gray-700 cursor-pointer"
+                                            onclick="closeModal()">
+                                            <ion-icon name="close-outline" class="text-lg md:text-2xl"></ion-icon>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {{-- card2 --}} -->
+                    <div class="max-w-60 md:max-w-xs border rounded-lg shadow-lg bg-gray-800 border-gray-700">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="cursor-pointer transform transition-transform duration-200 hover:scale-110"
+                                src="images/html.jpg" alt="image" onclick="openModal()" />
+                        </div>
+                        <div class="p-5">
+                            <div class="cursor-pointer" onclick="openModal()">
+                                <h5 class="mb-2 text-lg md:text-xl font-bold text-white">html
+                                    programming</h5>
+                            </div>
+                            <p class="mb-3 text-sm md:text-base font-normal text-gray-400">sertifikat
+                                html dari sololearn</p>
+                        </div>
+                        <!-- {{-- modal image card --}} -->
+                        <div id="myModal"
+                            class="modal hidden fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex justify-center items-center">
+                            <div class="modal-content">
+                                <div class="relative p-3 w-full max-w-xl md:max-w-4xl max-h-full">
+                                    <img src="images/html.jpg" alt="image">
+                                    <div class="absolute top-4 md:top-5 right-4 md:right-5">
+                                        <span
+                                            class="flex justify-content p-2 md:p-3 bg-gray-500 text-white rounded-full hover:bg-gray-700 cursor-pointer"
+                                            onclick="closeModal()">
+                                            <ion-icon name="close-outline" class="text-lg md:text-2xl"></ion-icon>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {{-- card3 --}} -->
+                    <div class="max-w-60 md:max-w-xs border rounded-lg shadow-lg bg-gray-800 border-gray-700">
+                        <div class="overflow-hidden rounded-t-lg">
+                            <img class="cursor-pointer transform transition-transform duration-200 hover:scale-110"
+                                src="images/c-plus.jpg" alt="image" onclick="openModal()" />
+                        </div>
+                        <div class="p-5">
+                            <div class="cursor-pointer" onclick="openModal()">
+                                <h5 class="mb-2 text-lg md:text-xl font-bold text-white">
+                                    c++ programming
+                                </h5>
+                            </div>
+                            <p class="mb-3 text-sm md:text-base font-normal text-gray-400">
+                                sertifikat c++ dari sololearn
+                            </p>
+                        </div>
+                        <!-- {{-- modal image card --}} -->
+                        <div id="myModal"
+                            class="modal hidden fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex justify-center items-center">
+                            <div class="modal-content">
+                                <div class="relative p-3 w-full max-w-xl md:max-w-4xl max-h-full">
+                                    <img src="images/c-plus.jpg" alt="image">
+                                    <div class="absolute top-4 md:top-5 right-4 md:right-5">
+                                        <span
+                                            class="flex justify-content p-2 md:p-3 bg-gray-500 text-white rounded-full hover:bg-gray-700 cursor-pointer"
+                                            onclick="closeModal()">
+                                            <ion-icon name="close-outline" class="text-lg md:text-2xl"></ion-icon>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#CBCBCB" fill-opacity="1"
+                        d="M0,160L80,181.3C160,203,320,245,480,234.7C640,224,800,160,960,144C1120,128,1280,160,1360,176L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    
+        <div class="-mt-16 md:-mt-44" id="contact">
+            <div class="bg-cover bg-center w-full h-screen"
+                style="background-image: url('images/bgdua-edit.jpg');">
+                <div class="relative z-20 mx-6 md:mx-20">
+                    <div class="flex justify-center pt-20 md:pt-28 pb-0">
+                        <div class="max-w-96 items-center">
+                            <div class="flex pb-0 md:pb-4">
+                                <h5 class="text-white text-lg md:text-3xl font-bold mr-2">Contact</h5>
+                                <h5 class="text-[#FFD369] text-lg md:text-3xl font-bold">Me</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center pt-0">
+                        <div id="alert-1=" class="my-alert  md:w-2/5 w-full flex items-center py-3 px-4 md:py-4 mb-4 rounded-lg bg-[#1D242E] bg-opacity-85 text-blue-400" role="alert">
+                            <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                            </svg>
+                            <span class="sr-only">Info</span>
+                            <div class="ms-3 md:text-sm text-xs font-medium">
+                                <b> Terimakasih! </b> Pesan anda sudah terkirim
+                            </div>
+                            <button type="button"
+                                class="btn-close ms-auto -mx-1.5 -my-1.5 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 inline-flex items-center justify-center h-8 w-8 text-blue-400 hover:bg-gray-700"
+                                data-dismiss-target="#alert-1" aria-label="Close">
+                                <span class="sr-only">Close</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="md:w-2/5 w-full md:px-8 md:pt-8 p-4 border-white border rounded-lg">
+                            <form name="submit-to-google-sheet">
+                                <div>
+                                    <label for="name" class="block mb-2 text-sm font-medium text-white">Name</label>
+                                    <input type="text" id="name" name="name"
+                                        class="bg-transparent border border-gray-600 text-sm rounded-lg block w-full p-2.5 placeholder-gray-400 text-white focus:border-blue-500 focus:ring-blue-500"
+                                        placeholder="jhonson..." required>
+                                </div>
+                                <div class="mt-5">
+                                    <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+                                    <input type="email" id="email" name="email"
+                                        class="bg-transparent border border-gray-600 text-sm rounded-lg block w-full p-2.5 placeholder-gray-400 text-white focus:border-blue-500 focus:ring-blue-500"
+                                        placeholder="youremail@gmail.com" required>
+                                </div>
+                                <div class="mt-5">
+                                    <label for="text"
+                                        class="block mb-2 text-sm font-medium text-white">Message</label>
+                                    <textarea id="text" rows="4" name="messages"
+                                        class="bg-transparent block p-2.5 w-full text-sm rounded-lg border focus:ring-blue-500 border-gray-600 placeholder-gray-400 text-white focus:border-blue-500"
+                                        placeholder="Leave a comment..." required></textarea>
+                                </div>
+                                <div class="flex justify-end mt-5">
+                                    <button type="submit"
+                                        class="btn-kirim text-white focus:ring-4 font-medium rounded-md text-xs md:text-sm px-3 py-2 md:px-5 md:py-2.5 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-blue-800">Submit</button>
+                                    <button disabled type="button"
+                                        class="hidden btn-loading text-white focus:ring-4 focus:outline-none font-medium rounded-md text-xs md:text-sm md:px-5 px-3 md:py-2.5 py-2 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 inline-flex items-center">
+                                        <svg aria-hidden="true" role="status"
+                                            class="inline w-4 h-4 me-3 text-white animate-spin" viewBox="0 0 100 101"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                                fill="#E5E7EB" />
+                                            <path
+                                                d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                        Loading...
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="bg-gray-800 ">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <div href="flex">
+                        <span class="text-2xl md:text-3xl font-bold whitespace-nowrap text-[#FFD369]">Andi</span>
+                        <span class="text-xl md:text-2xl font-bold whitespace-nowrap text-white -ml-1">suantara</span>
+                    </div>
+                    <ul
+                        class="pt-2 flex flex-wrap items-center mb-6 text-xs md:text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                        <li>
+                            <a href="#about" class="hover:underline me-4 md:me-6">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+                <span class="block text-xs md:text-sm sm:text-center text-gray-400">© 2024 <a target="_blank"
+                        href="https://www.instagram.com/taraandi_" class="hover:underline">Taraandi™</a>.
+                    All Rights Reserved.</span>
+            </div>
+        </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
